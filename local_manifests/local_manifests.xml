@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="TWINNFAMOUS-DEVELOPERS/omnirom_device_lge_p769" path="device/lge/p769" remote="github" revision="master" />
+  <project name="TWINNFAMOUS-DEVELOPERS/lge-kernel-omap4" path="kernel/lge/omap4-common" remote="github" revision="master" />
+  <project name="TWINNFAMOUS-DEVELOPERS/android_vendor_lge_p769" path="vendor/lge" remote="github" revision="master" />
+</manifest>
