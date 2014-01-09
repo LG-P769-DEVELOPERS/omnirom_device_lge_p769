@@ -106,6 +106,8 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p769/recovery-gfx.c
 BOARD_CHARGER_ENABLE_SUSPEND := true
+DEVICE_RESOLUTION := 540x960
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
 
 BOARD_HARDWARE_CLASS := device/lge/p769/cmhw/
 
