@@ -104,10 +104,13 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/p769/bluetooth
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 
+#recovery
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p769/recovery-gfx.c
 BOARD_CHARGER_ENABLE_SUSPEND := true
+# TWRP
 DEVICE_RESOLUTION := 540x960
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT :="BGRA"_8888"
 
 BOARD_HARDWARE_CLASS := device/lge/p769/cmhw/
 
