@@ -1,6 +1,12 @@
 [
   {
     "remote": "github",
+    "repository": "TWINNFAMOUS-DEVELOPERS/omnirom_device_lge_p769",
+    "target_path": "device/lge/p769",
+    "revision": "omni-4.3"
+  },
+  {
+    "remote": "github",
     "repository": "TWINNFAMOUS-DEVELOPERS/vendor_lge_p769",
     "target_path": "vendor/lge/p769",
     "revision": "omni-4.3"
