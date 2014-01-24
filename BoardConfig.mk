@@ -63,7 +63,7 @@ WIFI_DRIVER_FW_PATH_PARAM := "/data/misc/wifi/fw_path"
 WIFI_DRIVER_FW_PATH_STA := "/system/etc/firmware/fw_bcmdhd_p2p.bin"
 WIFI_DRIVER_FW_PATH_P2P := "/system/etc/firmware/fw_bcmdhd_p2p.bin"
 WIFI_DRIVER_FW_PATH_AP := "/system/etc/firmware/fw_bcmdhd_apsta.bin"
-BOARD_LEGACY_NL80211_STA_EVENTS := true
+WIFI_BAND := 802_11_ABGN
 
 OMAP_ENHANCEMENT := true
 OMAP_ENHANCEMENT_CPCAM := true
@@ -113,10 +113,9 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # TWRP
 DEVICE_RESOLUTION := 540x960
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_RECOVERY_PIXEL_FORMAT :="BGRA"_8888"
-
-# Charging
-COMMON_GLOBAL_CFLAGS += -DBOARD_CHARGING_CMDLINE_NAME='"chg"' -DBOARD_CHARGING_CMDLINE_VALUE='"68"'
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA"_8888"
+BOARD_RECOVERY_SWIPE := true
+BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 #BOARD_SEPOLICY_DIRS := \
     device/lge/p769/selinux
