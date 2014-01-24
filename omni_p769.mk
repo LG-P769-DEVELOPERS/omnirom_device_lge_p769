@@ -31,7 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=u2_open_eu BUILD_FINGERPRINT=lge/u2
 PRODUCT_DEVICE := p769
 
 # Enable Torch
-PRODUCT_PACKAGES += Torch WiFiDirectDemo LgeL9Parts
+PRODUCT_PACKAGES += Torch LgeL9Parts
  
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := omni_p769

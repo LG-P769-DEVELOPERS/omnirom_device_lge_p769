@@ -81,8 +81,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1033686220
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2469606195
 BOARD_FLASH_BLOCK_SIZE := 131072
 USE_OPENGL_RENDERER := true
-#BOARD_TOUCH_RECOVERY := true
-#ENHANCED_DOMX := true
 
 TARGET_SPECIFIC_HEADER_PATH := device/lge/p769/include
 
@@ -108,13 +106,16 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/p769/bluetooth
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 
 #recovery
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p769/recovery-gfx.c
 BOARD_CHARGER_ENABLE_SUSPEND := true
 # TWRP
 DEVICE_RESOLUTION := 540x960
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA"_8888"
-BOARD_RECOVERY_SWIPE := true
+# from AntonX
+#BOARD_RECOVERY_SWIPE := true
+#BOARD_TOUCH_RECOVERY := true
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lge/p769/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p769/recovery/recovery-gfx.c
 BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 #BOARD_SEPOLICY_DIRS := \
